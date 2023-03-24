@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         }
         // === END IF STATEMENT ===
 
-        lemonImage = findViewById(R.id.image_lemon_state)
+        lemonImage = findViewById(R.id.imageView)
         setViewElements()
         lemonImage!!.setOnClickListener {
             // TODO: call the method that handles the state when the image is clicked
@@ -155,7 +155,7 @@ class MainActivity : AppCompatActivity() {
         //  drawable from the drawable resources. The drawables have the same names as the strings
         //  but remember that they are drawables, not strings.
         // Find the ImageView in the layout
-        val diceImage: ImageView = findViewById(R.id.imageView)
+        val lemonTreeImageView: ImageView = findViewById(R.id.imageView)
 
         // Determine which drawable resource ID to use based on the dice roll
         val drawableResource = when (lemonadeState) {
@@ -167,7 +167,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Update the ImageView with the correct drawable resource ID
-        diceImage.setImageResource(drawableResource)
+        lemonTreeImageView.setImageResource(drawableResource)
     }
 
     /**
